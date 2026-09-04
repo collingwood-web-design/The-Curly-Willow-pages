@@ -720,7 +720,7 @@ h3 {
   align-items: center;
   width: 100%;
   z-index: 1;
-  background: #f3f1ee;
+  background: #ffffff;
 }
 
 .feature-banner__media {
@@ -728,7 +728,7 @@ h3 {
   aspect-ratio: 1512 / 745;
   max-height: min(56vh, 520px);
   overflow: hidden;
-  background: #f3f1ee;
+  background: #ffffff;
 }
 
 .feature-banner__media img {
@@ -745,7 +745,7 @@ h3 {
   align-items: center;
   width: 100%;
   padding: 1.15rem 1rem 1.5rem;
-  background: #f3f1ee;
+  background: #ffffff;
 }
 
 .feature-banner .btn-solid {
