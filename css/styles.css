@@ -252,6 +252,10 @@ h3 {
   inset: 0;
 }
 
+.hero-panel--left img {
+  object-position: center bottom;
+}
+
 .hero-overlay {
   position: absolute;
   inset: 0;
@@ -1184,7 +1188,7 @@ h3 {
   }
 
   .hero-panel--left img {
-    object-position: center 28%;
+    object-position: center bottom;
   }
 
   .hero-overlay {
