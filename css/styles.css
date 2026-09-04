@@ -58,34 +58,6 @@ h3 {
   color: var(--green);
 }
 
-/* Botanical accents */
-.leaf {
-  position: fixed;
-  width: min(280px, 42vw);
-  height: min(280px, 42vw);
-  pointer-events: none;
-  z-index: 0;
-  opacity: 0.12;
-  background:
-    radial-gradient(ellipse 40% 55% at 35% 40%, var(--green) 0 28%, transparent 30%),
-    radial-gradient(ellipse 35% 50% at 62% 55%, var(--green-soft) 0 24%, transparent 26%),
-    radial-gradient(ellipse 30% 45% at 48% 72%, var(--green) 0 20%, transparent 22%);
-  filter: blur(0.2px);
-}
-
-.leaf-tr {
-  top: -40px;
-  right: -60px;
-  transform: rotate(18deg);
-}
-
-.leaf-bl {
-  bottom: 18%;
-  left: -80px;
-  transform: rotate(-24deg);
-  opacity: 0.09;
-}
-
 /* Header */
 .site-header {
   position: sticky;
