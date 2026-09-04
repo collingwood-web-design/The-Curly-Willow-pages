@@ -715,38 +715,38 @@ h3 {
 
 /* Feature banner */
 .feature-banner {
-  position: relative;
-  aspect-ratio: 1512 / 745;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  overflow: hidden;
   z-index: 1;
-  background: #eceae6;
+  background: #f3f1ee;
 }
 
-.feature-banner > img {
+.feature-banner__media {
+  width: 100%;
+  /* Shorter frame — crops empty space at the top */
+  aspect-ratio: 2.6 / 1;
+  max-height: min(42vh, 420px);
+  overflow: hidden;
+  background: #f3f1ee;
+}
+
+.feature-banner__media img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  object-position: center center;
+  object-fit: cover;
+  object-position: center 78%;
   display: block;
-  position: absolute;
-  inset: 0;
 }
 
 .feature-banner__content {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: flex-end;
-  gap: 1.5rem;
-  padding: clamp(1.5rem, 5vw, 3.5rem);
-  pointer-events: none;
-}
-
-.feature-banner__content .btn {
-  pointer-events: auto;
+  width: 100%;
+  padding: 1.15rem 1rem 1.5rem;
+  background: #f3f1ee;
 }
 
 .feature-banner .btn-solid {
@@ -1223,8 +1223,7 @@ h3 {
   }
 
   .feature-banner__content {
-    flex-direction: column;
-    align-items: flex-start;
+    padding: 1rem 1rem 1.35rem;
   }
 }
 
