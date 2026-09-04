@@ -220,6 +220,9 @@ h3 {
   display: grid;
   grid-template-columns: 1fr 6px 1fr;
   width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
   z-index: 1;
   background: #fff;
@@ -1173,6 +1176,7 @@ h3 {
     grid-template-columns: 1fr;
     height: auto;
     max-height: none;
+    max-width: none;
   }
 
   .hero-gap,
