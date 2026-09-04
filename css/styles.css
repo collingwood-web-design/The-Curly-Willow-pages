@@ -1082,6 +1082,13 @@ h3 {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .review-grid .review:last-child {
+    grid-column: 1 / -1;
+    width: 100%;
+    max-width: calc((100% - 1.25rem) / 2);
+    justify-self: center;
+  }
+
   .footer-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -1204,6 +1211,12 @@ h3 {
   .review-grid,
   .footer-grid {
     grid-template-columns: 1fr;
+  }
+
+  .review-grid .review:last-child {
+    grid-column: auto;
+    max-width: none;
+    justify-self: stretch;
   }
 
   .footer-brand,
