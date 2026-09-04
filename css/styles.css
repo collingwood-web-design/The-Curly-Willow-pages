@@ -554,7 +554,7 @@ h3 {
 
 .experience-carousel {
   position: relative;
-  background: #1c1814;
+  background: #ffffff;
   aspect-ratio: 3 / 2;
   min-height: 380px;
   height: 100%;
@@ -626,9 +626,15 @@ h3 {
   align-self: flex-start;
 }
 
-.experience {
+.experience,
+.events {
   isolation: isolate;
+  max-width: 1280px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: clamp(2rem, 4vw, 3.25rem);
+  background: #ffffff;
 }
 
 .experience .split-copy {
@@ -660,11 +666,6 @@ h3 {
 .events .btn-solid:hover {
   background: #76973a;
   border-color: #76973a;
-}
-
-.events {
-  isolation: isolate;
-  margin-bottom: clamp(2rem, 4vw, 3.25rem);
 }
 
 .events .split-copy {
