@@ -971,10 +971,12 @@ h3 {
 
 .footer-brand__reserve {
   align-self: flex-start;
+  display: inline-flex;
 }
 
 .footer-press {
-  display: inline-block;
+  display: block;
+  width: fit-content;
   margin-top: 0.85rem;
   font-family: var(--font-nav);
   font-size: 0.72rem;
