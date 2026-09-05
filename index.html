@@ -381,7 +381,6 @@
         slides[index].classList.add('is-active');
       }, 3500);
     });
-  
     (function () {
       const bar = document.getElementById("cookie-bar");
       const btn = document.getElementById("cookie-accept");
@@ -390,8 +389,10 @@
         if (localStorage.getItem("cw-cookies-accepted") === "1") return;
       } catch (e) {}
       bar.hidden = false;
+      requestAnimationFrame(() => bar.classList.add("is-visible"));
       btn.addEventListener("click", () => {
         try { localStorage.setItem("cw-cookies-accepted", "1"); } catch (e) {}
+        bar.classList.remove("is-visible");
         bar.hidden = true;
       });
     })();

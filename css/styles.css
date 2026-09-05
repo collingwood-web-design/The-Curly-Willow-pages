@@ -2072,19 +2072,28 @@ h3 {
 /* Cookie bar */
 .cookie-bar {
   position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 60;
-  display: flex;
-  flex-wrap: wrap;
+  left: 50%;
+  bottom: 1rem;
+  z-index: 80;
+  display: none;
   align-items: center;
   justify-content: space-between;
-  gap: 0.85rem 1.25rem;
-  padding: 0.95rem clamp(1rem, 3vw, 1.75rem);
+  gap: 1rem 1.5rem;
+  width: min(42rem, calc(100% - 1.5rem));
+  padding: 1rem 1.15rem;
+  border: 1px solid rgba(136, 174, 65, 0.45);
   background: #3f5a3c;
   color: #fff;
-  box-shadow: 0 -6px 24px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 10px 32px rgba(32, 48, 30, 0.35);
+  transform: translateX(-50%) translateY(120%);
+  opacity: 0;
+  transition: transform 0.35s ease, opacity 0.35s ease;
+}
+
+.cookie-bar.is-visible {
+  display: flex;
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
 }
 
 .cookie-bar[hidden] {
@@ -2093,50 +2102,53 @@ h3 {
 
 .cookie-bar p {
   margin: 0;
-  flex: 1 1 16rem;
-  font-size: 0.92rem;
-  line-height: 1.5;
-  color: rgba(255, 255, 255, 0.94);
+  flex: 1 1 auto;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #f3f6ee !important;
 }
 
 .cookie-bar a {
-  color: #c5db8a;
+  color: #d4e8a0 !important;
   text-decoration: underline;
   text-underline-offset: 2px;
 }
 
 .cookie-bar a:hover {
-  color: #fff;
+  color: #fff !important;
 }
 
 .cookie-bar__actions {
   display: flex;
-  flex-wrap: wrap;
+  flex-shrink: 0;
   align-items: center;
-  gap: 0.65rem 0.85rem;
 }
 
+.cookie-bar .btn,
 .cookie-bar .btn-solid {
-  background: #88ae41;
-  border-color: #88ae41;
-  color: #fff;
+  background: #88ae41 !important;
+  border-color: #88ae41 !important;
+  color: #fff !important;
   cursor: pointer;
+  white-space: nowrap;
+  padding: 0.65rem 1.15rem;
 }
 
 .cookie-bar .btn-solid:hover {
-  background: #76973a;
-  border-color: #76973a;
+  background: #76973a !important;
+  border-color: #76973a !important;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   .cookie-bar {
+    bottom: 0.65rem;
+    width: calc(100% - 1rem);
     flex-direction: column;
     align-items: stretch;
     text-align: center;
-  }
-
-  .cookie-bar__actions {
-    justify-content: center;
+    gap: 0.85rem;
   }
 
   .cookie-bar .btn-solid {
