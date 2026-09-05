@@ -1898,10 +1898,11 @@ h3 {
   margin: 0 auto clamp(2rem, 4vw, 3rem);
 }
 
-.contact-page__script {
+.contact-page__intro .contact-page__script {
   margin: 0 0 0.45rem;
   font-family: var(--font-script);
   font-size: clamp(3.5rem, 8vw, 5.5rem);
+  font-weight: 400;
   color: #88ae41;
   line-height: 1;
 }
@@ -1912,7 +1913,7 @@ h3 {
   color: #3f5a3c;
 }
 
-.contact-page__intro p {
+.contact-page__intro > p:not(.contact-page__script) {
   margin: 0;
   color: #555;
   font-size: 1.05rem;
