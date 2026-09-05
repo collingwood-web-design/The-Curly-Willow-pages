@@ -1577,8 +1577,24 @@ h3 {
   color: #6b6b6b;
 }
 
+.typed-menu__est {
+  margin: 0.75rem 0 0;
+  font-family: var(--font-nav);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #c4a35a;
+}
+
+.page-hero--dinner,
+.page-hero--lunch {
+  margin-bottom: 0;
+}
+
 @media (max-width: 900px) {
-  .page-hero--lunch img:not(.page-hero__badge) {
+  .page-hero--lunch img:not(.page-hero__badge),
+  .page-hero--dinner img:not(.page-hero__badge) {
     max-height: min(62vh, 680px);
     object-position: center top;
   }

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lunch Menu | The Curly Willow Eatery</title>
-  <meta name="description" content="Seasonal lunch menu at The Curly Willow Eatery in Collingwood. Fresh local ingredients with gluten-free, vegan, and vegetarian options.">
+  <title>Dinner Menu | The Curly Willow Eatery</title>
+  <meta name="description" content="Seasonal dinner menu at The Curly Willow Eatery in Collingwood. Fresh local ingredients with gluten-free, vegan, and vegetarian options.">
   <link rel="icon" href="https://media.cwd-cdn.com/The-Curly-Willow/images/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +30,7 @@
     <nav class="site-nav" id="site-nav" aria-label="Primary">
       <a href="index.html">Home</a>
       <a href="lunch-menu.html">Lunch</a>
-      <a href="dinner-menu.html">Dinner</a>
+      <a href="dinner-menu.html" aria-current="page">Dinner</a>
       <a href="cocktails-wine.html">Cocktails &amp; Wine</a>
       <a href="about.html">About Us</a>
       <a href="events.html">Events &amp; Catering</a>
@@ -39,26 +39,26 @@
   </header>
 
   <main>
-    <section class="page-hero page-hero--lunch" aria-label="Lunch">
+    <section class="page-hero page-hero--dinner" aria-label="Dinner">
       <picture>
         <source
           media="(max-width: 900px)"
-          srcset="https://media.cwd-cdn.com/The-Curly-Willow/images/curly-willow-lunch-menu-cell-tablet.jpg?v=2"
-          width="1448"
-          height="1086"
+          srcset="https://media.cwd-cdn.com/The-Curly-Willow/images/dinner-hero-mobile.jpg"
+          width="801"
+          height="917"
         >
         <img
-          src="https://media.cwd-cdn.com/The-Curly-Willow/images/curly-willow-lunch-menu-2.jpg"
-          alt="Lunch at The Curly Willow Eatery"
-          width="2172"
-          height="724"
+          src="https://media.cwd-cdn.com/The-Curly-Willow/images/dinner-hero.jpg"
+          alt="Dinner at The Curly Willow Eatery"
+          width="2054"
+          height="721"
         >
       </picture>
     </section>
 
-    <section class="menu-intro section-pad" aria-labelledby="lunch-intro-heading">
+    <section class="menu-intro section-pad" aria-labelledby="dinner-intro-heading">
       <div class="menu-intro__inner reveal">
-        <h1 id="lunch-intro-heading">Seasonal &amp; Local Lunch</h1>
+        <h1 id="dinner-intro-heading">Seasonal &amp; Local Dinner</h1>
         <p>
           We refuse to compromise on quality in our restaurant. That’s why we source our fresh
           ingredients from local suppliers and use top-quality meats, fish and poultry.
@@ -68,13 +68,20 @@
       </div>
     </section>
 
-    <section class="typed-menu section-pad" aria-labelledby="lunch-menu-heading">
+    <section class="typed-menu section-pad" aria-labelledby="dinner-menu-heading">
       <div class="typed-menu__panel reveal">
         <p class="typed-menu__script">the Curly Willow</p>
-        <h2 id="lunch-menu-heading">Lunch Menu</h2>
+        <h2 id="dinner-menu-heading">Dinner Menu</h2>
 
         <div class="menu-section">
           <h3>Starters</h3>
+          <article class="menu-item">
+            <div class="menu-item__row">
+              <h4>Bread and Butter</h4>
+              <span class="menu-item__price">$7</span>
+            </div>
+            <p>Warm sourdough with house whipped butter.</p>
+          </article>
           <article class="menu-item">
             <div class="menu-item__row">
               <h4>Seasonal Greens Salad</h4>
@@ -89,7 +96,20 @@
             </div>
             <p>Crisp romaine, sourdough croutons, maple smoked bacon, Willow Caesar dressing, shaved parmesan.</p>
           </article>
-          <p class="menu-section__note">Add protein: grilled chicken or a shrimp skewer for $12</p>
+          <article class="menu-item">
+            <div class="menu-item__row">
+              <h4>Beet Salad</h4>
+              <span class="menu-item__price">$15</span>
+            </div>
+            <p>Arugula, beets, tomatoes, whipped goat cheese, citrus and pea shoots.</p>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item__row">
+              <h4>Spinach &amp; Artichoke Dip</h4>
+              <span class="menu-item__price">$18</span>
+            </div>
+            <p>Creamy dip served warm with tortilla chips.</p>
+          </article>
           <article class="menu-item">
             <div class="menu-item__row">
               <h4>House Chips and Dip</h4>
@@ -97,82 +117,95 @@
             </div>
             <p>Our house-made potato chips with homemade French onion dip.</p>
           </article>
+          <article class="menu-item">
+            <div class="menu-item__row">
+              <h4>Coconut Shrimp (4)</h4>
+              <span class="menu-item__price">$18</span>
+            </div>
+            <p>Jumbo coconut shrimp served with our Thai dipping sauce.</p>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item__row">
+              <h4>Garlic Mussels</h4>
+              <span class="menu-item__price">$18</span>
+            </div>
+            <p>1lb of mussels tossed in a garlic beurre blanc sauce. Served with garlic toast.</p>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item__row">
+              <h4>Focaccia and Olives</h4>
+              <span class="menu-item__price">$16</span>
+            </div>
+            <p>Focaccia and warm mixed olives with olive oil, balsamic and whipped feta.</p>
+          </article>
         </div>
 
         <div class="menu-section">
-          <h3>Bowls</h3>
-          <p class="menu-section__note">All bowls served with garlic toast.</p>
+          <h3>Pasta</h3>
           <article class="menu-item">
             <div class="menu-item__row">
               <h4>Mushroom Agnolotti</h4>
-              <span class="menu-item__price">$21</span>
+              <span class="menu-item__price">$29</span>
             </div>
-            <p>Fresh mushrooms, creamy rosemary sauce, topped with fresh crumbled goat cheese.</p>
+            <p>Stuffed agnolotti tossed in our creamy rosemary sauce, topped with crumbled goat cheese.</p>
           </article>
           <article class="menu-item">
             <div class="menu-item__row">
-              <h4>Salmon Bowl</h4>
-              <span class="menu-item__price">$25</span>
+              <h4>Shrimp Linguine</h4>
+              <span class="menu-item__price">$35</span>
             </div>
-            <p>Atlantic salmon, pearl couscous, arugula, cucumber, tomatoes, goat cheese and dill aioli.</p>
+            <p>Jumbo black tiger shrimp, linguine, fresh tomatoes, green onion, garlic, and white wine, topped with shaved parmesan.</p>
           </article>
           <article class="menu-item">
             <div class="menu-item__row">
-              <h4>Shrimp Risotto</h4>
-              <span class="menu-item__price">$22</span>
+              <h4>Chicken Parmesan</h4>
+              <span class="menu-item__price">$29</span>
             </div>
-            <p>Pan-seared shrimp with tomatoes, garlic, green onion, risotto, a splash of cream, topped with shaved parmesan.</p>
+            <p>Lightly hand-breaded chicken breast topped with house rosé on basil cream linguini pasta.</p>
           </article>
         </div>
 
         <div class="menu-section">
           <h3>Mains</h3>
-          <p class="menu-section__note">Served with choice of salad.</p>
           <article class="menu-item">
             <div class="menu-item__row">
-              <h4>Lobster Grilled Cheese</h4>
+              <h4>Salmon Filet</h4>
+              <span class="menu-item__price">$35</span>
+            </div>
+            <p>Centre-cut salmon filet topped with tropical fruit salsa, on coconut risotto with seasonal vegetable.</p>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item__row">
+              <h4>Thai Curry Bowl</h4>
+              <span class="menu-item__price">$35</span>
+            </div>
+            <p>Black tiger shrimp, mussels, and cod in a mild red Thai coconut curry, with rice. No substitutions or omissions.</p>
+          </article>
+          <article class="menu-item">
+            <div class="menu-item__row">
+              <h4>Surf N’ Turf Burger</h4>
               <span class="menu-item__price">$29</span>
             </div>
-            <p>Our signature dish! Chunks of maritime lobster, melty Swiss cheese, and garlic sourdough bread.</p>
+            <p>Juicy Angus beef, melted Swiss, jumbo black tiger shrimp, house BBQ sauce, crispy onion rings, lettuce, and tomato. Served with homemade chips.</p>
           </article>
           <article class="menu-item">
             <div class="menu-item__row">
-              <h4>Crab Cakes <span class="menu-item__tag">Gluten Free</span></h4>
-              <span class="menu-item__price">$24</span>
+              <h4>Filet Mignon</h4>
+              <span class="menu-item__price">$58</span>
             </div>
-            <p>Homemade lump-meat crab cakes (2) served with dill remoulade and pineapple mango salsa.</p>
+            <p>6oz AAA bacon-wrapped centre-cut beef tenderloin topped with porcini and cremini mushroom sauce. Served on smashed potato with seasonal vegetable and onion rings.</p>
           </article>
           <article class="menu-item">
             <div class="menu-item__row">
-              <h4>Crispy Chicken Sandwich</h4>
-              <span class="menu-item__price">$24</span>
+              <h4>AAA NY Striploin</h4>
+              <span class="menu-item__price">$54</span>
             </div>
-            <p>Hand-breaded chicken breast topped with crunchy slaw, homemade pickles and a mild sriracha lime aioli.</p>
-          </article>
-          <article class="menu-item">
-            <div class="menu-item__row">
-              <h4>NY Steak Sandwich</h4>
-              <span class="menu-item__price">$26</span>
-            </div>
-            <p>6oz New York Strip on garlic toast with house BBQ sauce, topped with crispy onion rings.</p>
-          </article>
-          <article class="menu-item">
-            <div class="menu-item__row">
-              <h4>Angus Burger</h4>
-              <span class="menu-item__price">$21</span>
-            </div>
-            <p>Melted Swiss, house secret sauce, crispy onion rings, lettuce and tomato on a toasted kaiser. Served with house chips. Salad extra.</p>
-          </article>
-          <article class="menu-item">
-            <div class="menu-item__row">
-              <h4>Turkey Burger</h4>
-              <span class="menu-item__price">$24</span>
-            </div>
-            <p>Homemade turkey burger topped with melted Swiss, crisp arugula and cranberry aioli.</p>
+            <p>California cut, centre-cut striploin topped with house BBQ sauce, on smashed potato with seasonal vegetable and crispy onion rings.</p>
           </article>
         </div>
 
         <p class="typed-menu__footer">Ask your server about our delicious mini desserts!</p>
+        <p class="typed-menu__est">Est. 2017</p>
       </div>
     </section>
 
