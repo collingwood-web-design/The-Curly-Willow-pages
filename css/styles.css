@@ -989,6 +989,14 @@ h3 {
   transition: opacity 0.2s ease;
 }
 
+.footer-brand__reserve + .footer-press {
+  margin-top: 0.85rem;
+}
+
+.footer-press + .footer-press {
+  margin-top: 0.55rem;
+}
+
 .footer-press:hover {
   opacity: 1;
   text-decoration: underline;
