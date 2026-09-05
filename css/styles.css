@@ -1587,6 +1587,79 @@ h3 {
   color: #c4a35a;
 }
 
+.drinks-intro {
+  text-align: center;
+  padding-top: clamp(2.5rem, 5vw, 3.75rem);
+  padding-bottom: clamp(1rem, 2.5vw, 1.75rem);
+}
+
+.drinks-intro__inner {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.drinks-intro__logo {
+  width: clamp(5.5rem, 14vw, 7.5rem);
+  height: auto;
+  margin: 0 auto 1rem;
+}
+
+.drinks-intro h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 2.85rem);
+  color: #3f5a3c;
+  font-weight: 600;
+}
+
+.drinks-menu {
+  position: relative;
+  isolation: isolate;
+  padding-top: clamp(1rem, 3vw, 1.75rem);
+  padding-bottom: clamp(3rem, 6vw, 4.5rem);
+  background-color: #ffffff;
+}
+
+.drinks-menu::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image: url("https://media.cwd-cdn.com/The-Curly-Willow/images/the-curly-willow-eatery-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 0.34;
+  pointer-events: none;
+}
+
+.drinks-menu__grid {
+  position: relative;
+  z-index: 1;
+  max-width: var(--max);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1.25rem, 3vw, 2rem);
+  align-items: start;
+}
+
+.drinks-panel {
+  max-width: none;
+  width: 100%;
+  margin: 0;
+  padding: clamp(1.35rem, 3vw, 2rem);
+  background: rgba(255, 255, 255, 0.92);
+  text-align: left;
+}
+
+.drinks-panel .menu-section h3 {
+  text-align: center;
+}
+
+.drinks-panel .menu-section__note {
+  margin-top: 0.85rem;
+}
+
 .page-hero--dinner,
 .page-hero--lunch {
   margin-bottom: 0;
@@ -1601,6 +1674,11 @@ h3 {
 
   .page-hero {
     --page-badge: clamp(6.5rem, 22vw, 9rem);
+  }
+
+  .drinks-menu__grid {
+    grid-template-columns: 1fr;
+    max-width: 36rem;
   }
 }
 
