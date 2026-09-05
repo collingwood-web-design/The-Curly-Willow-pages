@@ -721,22 +721,22 @@ h3 {
   max-width: var(--max);
   margin: 0 auto clamp(2rem, 4vw, 3.25rem);
   z-index: 1;
-  background: linear-gradient(180deg, #f3f5ef 0%, #ffffff 55%);
-  padding: clamp(1.75rem, 4vw, 2.75rem) clamp(1rem, 3vw, 1.5rem) clamp(1.5rem, 3vw, 2.25rem);
+  background: #ffffff;
+  padding: 0 clamp(1rem, 3vw, 1.5rem) clamp(1.5rem, 3vw, 2.25rem);
 }
 
 .feature-banner__media {
   width: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 1512 / 745;
   max-height: min(52vh, 480px);
   overflow: hidden;
-  background: #eef1e8;
+  background: #ffffff;
 }
 
 .feature-banner__media img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center center;
   display: block;
 }
