@@ -1245,9 +1245,9 @@ h3 {
   }
 
   .hero-panel--left {
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 3 / 4;
     height: auto;
-    max-height: min(52vh, 520px);
+    max-height: min(72vh, 720px);
     width: 100%;
   }
 
@@ -1300,8 +1300,8 @@ h3 {
   }
 
   .hero-panel--left {
-    aspect-ratio: 5 / 4;
-    max-height: min(48vh, 420px);
+    aspect-ratio: 3 / 4;
+    max-height: min(68vh, 640px);
   }
 
   .hero-actions {
