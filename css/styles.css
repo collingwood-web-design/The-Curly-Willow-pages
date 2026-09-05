@@ -1626,9 +1626,9 @@ h3 {
   z-index: 0;
   background-image: url("https://media.cwd-cdn.com/The-Curly-Willow/images/the-curly-willow-eatery-background.jpg");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: right center;
   background-size: cover;
-  opacity: 0.34;
+  opacity: 0.32;
   pointer-events: none;
 }
 
