@@ -893,7 +893,7 @@ h3 {
   width: 100%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1.15fr 1fr 1.1fr 1.05fr;
+  grid-template-columns: 1.1fr 1fr 1.25fr;
   gap: 0;
   padding: clamp(2.5rem, 5vw, 3.25rem) clamp(1rem, 3vw, 2rem);
   align-items: start;
@@ -901,15 +901,13 @@ h3 {
 
 .footer-brand,
 .footer-hours,
-.footer-visit,
-.footer-map {
+.footer-visit {
   padding: 0 1.35rem;
   min-width: 0;
 }
 
 .footer-hours,
-.footer-visit,
-.footer-map {
+.footer-visit {
   border-left: 1px solid rgba(255, 255, 255, 0.35);
 }
 
@@ -947,17 +945,30 @@ h3 {
 
 .social {
   display: flex;
-  gap: 0.75rem;
+  gap: 0.65rem;
+  margin-bottom: 1rem;
 }
 
 .social a {
+  display: inline-grid;
+  place-items: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 255, 255, 0.9);
   color: #fff;
   opacity: 0.95;
-  transition: opacity 0.2s ease;
+  transition: background 0.2s ease, color 0.2s ease, opacity 0.2s ease;
 }
 
 .social a:hover {
   opacity: 1;
+  background: #fff;
+  color: #88ae41;
+}
+
+.footer-brand__reserve {
+  align-self: flex-start;
 }
 
 .footer-hours h3,
@@ -996,10 +1007,6 @@ h3 {
   text-decoration: none;
 }
 
-.footer-visit .btn {
-  margin-top: 0.75rem;
-}
-
 .site-footer .btn-outline-light {
   background: transparent;
   border-color: rgba(255, 255, 255, 0.85);
@@ -1013,18 +1020,21 @@ h3 {
 }
 
 .footer-map {
+  margin-top: 0.85rem;
   overflow: hidden;
   max-width: 100%;
   min-width: 0;
+  border-radius: 2px;
 }
 
 .footer-map iframe {
   width: 100%;
   max-width: 100%;
-  min-height: 160px;
-  height: 100%;
+  min-height: 150px;
+  height: 160px;
   border: 0;
   background: #fff;
+  display: block;
 }
 
 .footer-bar {
@@ -1141,16 +1151,18 @@ h3 {
 
   .footer-brand,
   .footer-hours,
-  .footer-visit,
-  .footer-map {
+  .footer-visit {
     border-left: 0;
     padding: 1rem 0.75rem;
   }
 
   .footer-hours,
-  .footer-visit,
-  .footer-map {
+  .footer-visit {
     border-top: 1px solid rgba(255, 255, 255, 0.25);
+  }
+
+  .footer-visit {
+    grid-column: 1 / -1;
   }
 
 }
@@ -1275,8 +1287,7 @@ h3 {
 
   .footer-brand,
   .footer-hours,
-  .footer-visit,
-  .footer-map {
+  .footer-visit {
     border-left: 0;
     border-top: 1px solid rgba(255, 255, 255, 0.25);
     padding: 1rem 0;
