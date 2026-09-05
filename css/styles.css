@@ -1430,8 +1430,24 @@ h3 {
 }
 
 .typed-menu {
+  position: relative;
+  isolation: isolate;
   padding-top: clamp(1.25rem, 3vw, 2rem);
   padding-bottom: clamp(2.5rem, 5vw, 3.5rem);
+  background-color: #ffffff;
+}
+
+.typed-menu:not(.typed-menu--meatless)::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image: url("https://media.cwd-cdn.com/The-Curly-Willow/images/the-curly-willow-eatery-background.jpg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+  opacity: 0.32;
+  pointer-events: none;
 }
 
 .typed-menu--meatless {
@@ -1440,6 +1456,8 @@ h3 {
 }
 
 .typed-menu__panel {
+  position: relative;
+  z-index: 1;
   max-width: 42rem;
   margin: 0 auto;
   text-align: center;
