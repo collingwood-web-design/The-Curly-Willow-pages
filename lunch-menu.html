@@ -40,12 +40,20 @@
 
   <main>
     <section class="page-hero page-hero--lunch" aria-label="Lunch">
-      <img
-        src="https://media.cwd-cdn.com/The-Curly-Willow/images/curly-willow-lunch-menu.jpg"
-        alt="Lunch at The Curly Willow Eatery"
-        width="2172"
-        height="724"
-      >
+      <picture>
+        <source
+          media="(max-width: 900px)"
+          srcset="https://media.cwd-cdn.com/The-Curly-Willow/images/curly-willow-lunch-menu-cell-tablet.jpg"
+          width="1448"
+          height="1086"
+        >
+        <img
+          src="https://media.cwd-cdn.com/The-Curly-Willow/images/curly-willow-lunch-menu.jpg"
+          alt="Lunch at The Curly Willow Eatery"
+          width="2172"
+          height="724"
+        >
+      </picture>
     </section>
 
     <section class="menu-intro section-pad" aria-labelledby="lunch-intro-heading">

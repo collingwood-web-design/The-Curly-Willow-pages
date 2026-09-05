@@ -1530,7 +1530,7 @@ h3 {
 }
 
 @media (max-width: 900px) {
-  .page-hero img:not(.page-hero__badge) {
+  .page-hero--lunch img:not(.page-hero__badge) {
     max-height: min(62vh, 680px);
     object-position: center top;
   }
