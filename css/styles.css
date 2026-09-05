@@ -101,20 +101,20 @@ h3 {
   flex-wrap: nowrap;
   justify-content: flex-end;
   align-items: center;
-  gap: 0;
+  gap: clamp(0.55rem, 1.6vw, 1.5rem);
   flex: 1 1 auto;
   min-width: 0;
 }
 
 .site-nav a {
   font-family: var(--font-nav);
-  font-size: clamp(0.58rem, 0.95vw, 0.68rem);
+  font-size: clamp(0.62rem, 1.05vw, 0.74rem);
   font-weight: 400;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
   text-decoration: none;
   color: var(--nav);
-  padding: 0.25rem 0.4rem;
+  padding: 0.3rem 0.55rem;
   position: relative;
   white-space: nowrap;
   flex-shrink: 0;
@@ -128,8 +128,8 @@ h3 {
 .site-nav a::after {
   content: "";
   position: absolute;
-  left: 0.4rem;
-  right: 0.4rem;
+  left: 0.55rem;
+  right: 0.55rem;
   bottom: 0.05rem;
   height: 2px;
   background: var(--nav-active);
