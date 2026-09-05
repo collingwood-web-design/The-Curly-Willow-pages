@@ -1688,3 +1688,129 @@ h3 {
   }
 }
 
+/* About Us */
+.about-hero {
+  max-width: min(1280px, 100%);
+  margin: 0 auto;
+  padding-top: clamp(1.5rem, 4vw, 2.5rem);
+  padding-bottom: clamp(1.5rem, 3vw, 2.25rem);
+}
+
+.about-hero__script {
+  margin: 0 0 1rem;
+  font-family: var(--font-script);
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  color: #88ae41;
+  line-height: 1;
+}
+
+.about-hero__media {
+  overflow: hidden;
+}
+
+.about-hero__media img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: min(52vh, 520px);
+  object-fit: cover;
+  object-position: center center;
+}
+
+.about-owners {
+  text-align: center;
+  padding-top: clamp(2rem, 4vw, 3rem);
+  padding-bottom: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.about-owners__inner {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.about-owners__logo {
+  width: clamp(4.5rem, 12vw, 6.5rem);
+  height: auto;
+  margin: 0 auto 1rem;
+}
+
+.about-owners__eyebrow {
+  margin: 0 0 0.35rem;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  color: #3f5a3c;
+}
+
+.about-owners h1 {
+  margin: 0 0 1.15rem;
+  font-size: clamp(1.85rem, 3.5vw, 2.6rem);
+  color: #3f5a3c;
+}
+
+.about-owners p {
+  margin: 0;
+  color: #555;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.about-events {
+  text-align: center;
+  padding-top: clamp(1rem, 3vw, 2rem);
+}
+
+.about-events__inner {
+  max-width: min(1080px, 100%);
+  margin: 0 auto;
+}
+
+.about-events__script {
+  margin: 0 0 1.5rem;
+  font-family: var(--font-script);
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  font-weight: 400;
+  color: #88ae41;
+  line-height: 1.1;
+}
+
+.about-events__gallery {
+  margin: 0 0 clamp(2rem, 4vw, 3rem);
+  overflow: hidden;
+}
+
+.about-events__gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.about-events__copy {
+  max-width: 36rem;
+  margin: 0 auto clamp(2rem, 4vw, 3rem);
+}
+
+.about-events__copy h3 {
+  margin: 0 0 0.85rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.65rem, 3vw, 2.1rem);
+  color: #3f5a3c;
+}
+
+.about-events__copy p {
+  margin: 0;
+  color: #555;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.about-events__flyer {
+  max-width: 28rem;
+  margin: 0 auto;
+}
+
+.about-events__flyer img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
