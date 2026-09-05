@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lunch Menu | The Curly Willow Eatery</title>
+  <meta name="description" content="Seasonal lunch menu at The Curly Willow Eatery in Collingwood. Fresh local ingredients with gluten-free, vegan, and vegetarian options.">
+  <link rel="icon" href="https://media.cwd-cdn.com/The-Curly-Willow/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img
+        class="brand-logo"
+        src="https://media.cwd-cdn.com/The-Curly-Willow/images/logo.svg"
+        alt="The Curly Willow Eatery"
+        width="214"
+        height="91"
+      >
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="lunch-menu.html" aria-current="page">Lunch</a>
+      <a href="dinner.html">Dinner</a>
+      <a href="cocktails-wine.html">Cocktails &amp; Wine</a>
+      <a href="about.html">About Us</a>
+      <a href="events.html">Events &amp; Catering</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero page-hero--lunch" aria-label="Lunch">
+      <picture>
+        <source
+          media="(max-width: 900px)"
+          srcset="https://media.cwd-cdn.com/The-Curly-Willow/images/lunch-hero-mobile.jpg"
+        >
+        <img
+          src="https://media.cwd-cdn.com/The-Curly-Willow/images/lunch-hero.jpg"
+          alt="Lunch at The Curly Willow Eatery"
+          width="1200"
+          height="462"
+        >
+      </picture>
+      <img
+        class="page-hero__badge"
+        src="https://media.cwd-cdn.com/The-Curly-Willow/images/logo.png"
+        alt=""
+        width="180"
+        height="180"
+        aria-hidden="true"
+      >
+    </section>
+
+    <section class="menu-intro section-pad" aria-labelledby="lunch-intro-heading">
+      <div class="menu-intro__inner reveal">
+        <h1 id="lunch-intro-heading">Seasonal &amp; Local</h1>
+        <p>
+          We refuse to compromise on quality in our restaurant. That’s why we source our fresh
+          ingredients from local suppliers and use top-quality meats, fish and poultry.
+          Growing our own vegetables and herbs ensures fresh ingredients all season long.
+        </p>
+        <p class="menu-intro__note">Gluten-Free, Vegan &amp; Vegetarian Options Are Available</p>
+        <img
+          class="menu-intro__icons"
+          src="https://media.cwd-cdn.com/The-Curly-Willow/images/diet-icons-cc.png"
+          alt="Gluten-free, vegan, vegetarian, and no credit card fees"
+          width="532"
+          height="133"
+        >
+        <p class="menu-intro__note">We do not charge our customers CC fees!</p>
+      </div>
+    </section>
+
+    <section class="menu-boards section-pad" aria-label="Lunch menus">
+      <div class="menu-boards__grid">
+        <a
+          class="menu-board reveal"
+          href="https://media.cwd-cdn.com/The-Curly-Willow/images/menu-lunch-may-2026.jpg"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="https://media.cwd-cdn.com/The-Curly-Willow/images/menu-lunch-may-2026.jpg"
+            alt="The Curly Willow lunch menu"
+            width="729"
+            height="1200"
+          >
+        </a>
+        <a
+          class="menu-board reveal reveal-delay"
+          href="https://media.cwd-cdn.com/The-Curly-Willow/images/menu-vegan.jpg"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="https://media.cwd-cdn.com/The-Curly-Willow/images/menu-vegan.jpg"
+            alt="The Curly Willow vegan menu"
+            width="914"
+            height="1200"
+          >
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-brand__top">
+          <img
+            src="https://media.cwd-cdn.com/The-Curly-Willow/images/logo-white.png"
+            alt=""
+            width="64"
+            height="64"
+          >
+          <p class="footer-name">The Curly Willow Eatery</p>
+        </div>
+        <p class="footer-tagline">Good food brings people together.</p>
+        <div class="social">
+          <a href="https://www.facebook.com/thecurlywillowcollingwood" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M22 12.07C22 6.48 17.52 2 11.93 2S1.86 6.48 1.86 12.07c0 5.02 3.66 9.18 8.44 9.93v-7.03H7.9v-2.9h2.4V9.86c0-2.37 1.4-3.69 3.56-3.69 1.03 0 2.11.19 2.11.19v2.32h-1.19c-1.17 0-1.54.73-1.54 1.48v1.78h2.62l-.42 2.9h-2.2V22c4.78-.75 8.44-4.91 8.44-9.93z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/thecurlywilloweatery/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.64-.07-4.85s.01-3.58.07-4.85C2.38 3.92 3.9 2.38 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 2.7.27.27 2.69.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.2 4.36 2.62 6.78 6.98 6.98C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95C23.73 2.7 21.31.27 16.95.07 15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.41-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg>
+          </a>
+        </div>
+        <a class="btn btn-outline-light footer-brand__reserve" href="tel:7054441562">Reservations <span aria-hidden="true">›</span></a>
+      </div>
+
+      <div class="footer-hours">
+        <h3>Hours</h3>
+        <p><strong>Lunch</strong><br>Wednesday – Friday 11:30 – 3:00</p>
+        <p><strong>Dinner</strong><br>Tuesday – Saturday 5:00 – 9:00</p>
+        <p>Reservations Recommended</p>
+        <p>Closed Sunday &amp; Monday</p>
+      </div>
+
+      <div class="footer-visit">
+        <h3>Visit Us</h3>
+        <p class="footer-line">
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 14.5 9 2.5 2.5 0 0 1 12 11.5z"/></svg>
+          <span>141 Pine St, Collingwood, ON L9Y 2P1</span>
+        </p>
+        <p class="footer-line">
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .57 3.6 1 1 0 0 1-.25 1z"/></svg>
+          <a href="tel:7054441562">705 – 444 – 1562</a>
+        </p>
+        <div class="footer-map">
+          <iframe
+            title="Map of The Curly Willow Eatery"
+            src="https://maps.google.com/maps?q=The%20Curly%20Willow%20Eatery%20141%20Pine%20St%20Collingwood&amp;z=15&amp;output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bar">
+      <p>© <span id="year"></span> The Curly Willow Eatery · Website designed by <a href="https://www.collingwoodwebdesign.com/" target="_blank" rel="noopener noreferrer">Collingwood Web Design</a></p>
+      <p class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+      </p>
+      <a class="to-top" href="#top" aria-label="Back to top">↑</a>
+    </div>
+  </footer>
+
+  <script>
+    document.documentElement.id = 'top';
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.getElementById('site-nav');
+    toggle?.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      toggle.setAttribute('aria-label', open ? 'Open menu' : 'Close menu');
+      nav.classList.toggle('is-open', !open);
+    });
+
+    const reveals = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      reveals.forEach((el) => io.observe(el));
+    } else {
+      reveals.forEach((el) => el.classList.add('is-visible'));
+    }
+  </script>
+</body>
+</html>

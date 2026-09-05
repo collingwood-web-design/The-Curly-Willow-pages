@@ -1330,3 +1330,127 @@ h3 {
     margin-left: 0;
   }
 }
+
+/* Inner pages — lunch / dinner / drinks */
+.page-hero {
+  position: relative;
+  width: 100%;
+  max-width: min(1280px, 100%);
+  margin: 0 auto;
+  overflow: visible;
+  --page-badge: clamp(7rem, 14vw, 11.25rem);
+  margin-bottom: calc(var(--page-badge) * 0.35);
+}
+
+.page-hero img:not(.page-hero__badge) {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: min(48vh, 460px);
+  object-fit: cover;
+  object-position: center center;
+}
+
+.page-hero__badge {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  z-index: 6;
+  width: var(--page-badge);
+  height: auto;
+  transform: translate(-50%, -55%);
+  pointer-events: none;
+  filter: drop-shadow(0 8px 18px rgba(40, 50, 40, 0.16));
+}
+
+.menu-intro {
+  text-align: center;
+  padding-top: clamp(2.5rem, 5vw, 3.5rem);
+}
+
+.menu-intro__inner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.menu-intro h1 {
+  margin: 0 0 1rem;
+  font-size: clamp(2rem, 4vw, 2.85rem);
+  color: #3f5a3c;
+  font-weight: 600;
+}
+
+.menu-intro p {
+  margin: 0 auto 1.25rem;
+  color: #555;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  max-width: 40rem;
+}
+
+.menu-intro__note {
+  margin: 1.25rem auto 0.75rem !important;
+  font-family: var(--font-nav);
+  font-size: 0.72rem !important;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #555 !important;
+}
+
+.menu-intro__icons {
+  width: min(100%, 532px);
+  height: auto;
+  margin: 0.5rem auto 0.25rem;
+}
+
+.menu-boards {
+  padding-top: clamp(1rem, 3vw, 2rem);
+  padding-bottom: clamp(3rem, 6vw, 4.5rem);
+}
+
+.menu-boards__grid {
+  max-width: var(--max);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1.25rem, 3vw, 2rem);
+  align-items: start;
+}
+
+.menu-board {
+  display: block;
+  overflow: hidden;
+  background: #f6f7f4;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-board:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(40, 50, 40, 0.12);
+}
+
+.menu-board img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .page-hero img:not(.page-hero__badge) {
+    max-height: min(62vh, 680px);
+    object-position: center top;
+  }
+
+  .page-hero {
+    --page-badge: clamp(6.5rem, 22vw, 9rem);
+  }
+}
+
+@media (max-width: 700px) {
+  .menu-boards__grid {
+    grid-template-columns: 1fr;
+    max-width: 28rem;
+  }
+}
+
