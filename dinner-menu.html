@@ -354,6 +354,15 @@
       <a class="to-top" href="#top" aria-label="Back to top">↑</a>
     </div>
   </footer>
+  <div class="cookie-bar" id="cookie-bar" hidden role="dialog" aria-live="polite" aria-label="Cookie notice">
+    <p>
+      We use cookies to improve your experience on our site. By using our site you consent to cookies.
+      See our <a href="privacy.html">Privacy Policy</a> for details.
+    </p>
+    <div class="cookie-bar__actions">
+      <button class="btn btn-solid" type="button" id="cookie-accept">Accept</button>
+    </div>
+  </div>
 
   <script>
     document.documentElement.id = 'top';
@@ -382,6 +391,20 @@
     } else {
       reveals.forEach((el) => el.classList.add('is-visible'));
     }
+  
+    (function () {
+      const bar = document.getElementById("cookie-bar");
+      const btn = document.getElementById("cookie-accept");
+      if (!bar || !btn) return;
+      try {
+        if (localStorage.getItem("cw-cookies-accepted") === "1") return;
+      } catch (e) {}
+      bar.hidden = false;
+      btn.addEventListener("click", () => {
+        try { localStorage.setItem("cw-cookies-accepted", "1"); } catch (e) {}
+        bar.hidden = true;
+      });
+    })();
   </script>
 </body>
 </html>

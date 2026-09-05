@@ -2011,4 +2011,137 @@ h3 {
   color: #3f5a3c;
 }
 
+/* Legal / Privacy */
+.legal-page {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding-top: clamp(1.5rem, 3.5vw, 2.25rem);
+}
+
+.legal-page__intro {
+  margin-bottom: clamp(1.5rem, 3vw, 2.25rem);
+}
+
+.legal-page__intro h1 {
+  margin: 0 0 0.5rem;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  color: #3f5a3c;
+}
+
+.legal-page__updated {
+  margin: 0;
+  color: #777;
+  font-size: 0.95rem;
+}
+
+.legal-page__body h2 {
+  margin: 1.75rem 0 0.65rem;
+  font-size: clamp(1.25rem, 2.5vw, 1.45rem);
+}
+
+.legal-page__body p,
+.legal-page__body li {
+  color: #555;
+  font-size: 1.02rem;
+  line-height: 1.7;
+}
+
+.legal-page__body p {
+  margin: 0 0 0.85rem;
+}
+
+.legal-page__body ul {
+  margin: 0 0 1rem;
+  padding-left: 1.25rem;
+}
+
+.legal-page__body li {
+  margin: 0 0 0.55rem;
+}
+
+.legal-page__body a {
+  color: var(--green);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.legal-page__body a:hover {
+  color: #88ae41;
+}
+
+/* Cookie bar */
+.cookie-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 60;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.85rem 1.25rem;
+  padding: 0.95rem clamp(1rem, 3vw, 1.75rem);
+  background: #3f5a3c;
+  color: #fff;
+  box-shadow: 0 -6px 24px rgba(0, 0, 0, 0.18);
+}
+
+.cookie-bar[hidden] {
+  display: none !important;
+}
+
+.cookie-bar p {
+  margin: 0;
+  flex: 1 1 16rem;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.94);
+}
+
+.cookie-bar a {
+  color: #c5db8a;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.cookie-bar a:hover {
+  color: #fff;
+}
+
+.cookie-bar__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem 0.85rem;
+}
+
+.cookie-bar .btn-solid {
+  background: #88ae41;
+  border-color: #88ae41;
+  color: #fff;
+  cursor: pointer;
+}
+
+.cookie-bar .btn-solid:hover {
+  background: #76973a;
+  border-color: #76973a;
+}
+
+@media (max-width: 600px) {
+  .cookie-bar {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .cookie-bar__actions {
+    justify-content: center;
+  }
+
+  .cookie-bar .btn-solid {
+    width: 100%;
+  }
+}
+
 
