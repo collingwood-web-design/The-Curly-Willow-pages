@@ -1337,16 +1337,18 @@ h3 {
   width: 100%;
   max-width: min(1280px, 100%);
   margin: 0 auto;
-  overflow: visible;
-  --page-badge: clamp(7rem, 14vw, 11.25rem);
-  margin-bottom: calc(var(--page-badge) * 0.35);
+  overflow: hidden;
+}
+
+.page-hero--lunch {
+  margin-bottom: 0;
 }
 
 .page-hero img:not(.page-hero__badge) {
   width: 100%;
   height: auto;
   display: block;
-  max-height: min(48vh, 460px);
+  max-height: min(42vh, 420px);
   object-fit: cover;
   object-position: center center;
 }
