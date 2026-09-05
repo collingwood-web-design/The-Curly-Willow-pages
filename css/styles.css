@@ -229,13 +229,39 @@ h3 {
   max-width: min(1280px, 100%);
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: calc(var(--hero-badge) * 0.28);
   position: relative;
   z-index: 1;
   background: #fff;
   /* Keep the dual hero mostly above the fold on desktop */
   height: min(76vh, 660px);
   max-height: 660px;
-  overflow: hidden;
+  overflow: visible;
+  --hero-badge: clamp(5.75rem, 11vw, 7.75rem);
+}
+
+.hero-badge {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  z-index: 6;
+  width: var(--hero-badge);
+  height: auto;
+  transform: translate(-50%, -75%);
+  opacity: 0;
+  animation: hero-badge-fade 1.15s ease forwards;
+  animation-delay: 0.4s;
+  pointer-events: none;
+  filter: drop-shadow(0 6px 16px rgba(40, 50, 40, 0.18));
+}
+
+@keyframes hero-badge-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .hero-gap {
@@ -1124,6 +1150,11 @@ h3 {
 
   .hero-panel--right img {
     animation: none;
+  }
+
+  .hero-badge {
+    animation: none;
+    opacity: 1;
   }
 
   .hero-panel:hover img,
