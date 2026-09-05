@@ -227,8 +227,8 @@ h3 {
   z-index: 1;
   background: #fff;
   /* Keep the dual hero mostly above the fold on desktop */
-  height: min(72vh, 620px);
-  max-height: 620px;
+  height: min(76vh, 660px);
+  max-height: 660px;
 }
 
 .hero-gap {
