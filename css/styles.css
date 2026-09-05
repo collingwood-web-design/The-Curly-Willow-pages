@@ -1170,6 +1170,10 @@ h3 {
 }
 
 @media (max-width: 900px) {
+  .brand-logo {
+    width: min(190px, 42vw);
+  }
+
   .nav-toggle {
     display: block;
     margin-left: auto;
@@ -1274,6 +1278,10 @@ h3 {
 }
 
 @media (max-width: 560px) {
+  .brand-logo {
+    width: min(150px, 48vw);
+  }
+
   .perk-list,
   .menu-grid,
   .review-grid,
