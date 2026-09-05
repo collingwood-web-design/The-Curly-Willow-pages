@@ -1367,7 +1367,8 @@ h3 {
 
 .menu-intro {
   text-align: center;
-  padding-top: clamp(3rem, 6vw, 4.5rem);
+  padding-top: clamp(2.5rem, 5vw, 3.75rem);
+  padding-bottom: clamp(1rem, 2.5vw, 1.5rem);
 }
 
 .menu-intro__inner {
@@ -1391,7 +1392,7 @@ h3 {
 }
 
 .menu-intro__note {
-  margin: 1.25rem auto 0.75rem !important;
+  margin: 1.25rem auto 0 !important;
   font-family: var(--font-nav);
   font-size: 0.72rem !important;
   font-weight: 600;
@@ -1407,7 +1408,7 @@ h3 {
 }
 
 .typed-menu {
-  padding-top: clamp(1rem, 3vw, 2rem);
+  padding-top: clamp(1.25rem, 3vw, 2rem);
   padding-bottom: clamp(2.5rem, 5vw, 3.5rem);
 }
 
