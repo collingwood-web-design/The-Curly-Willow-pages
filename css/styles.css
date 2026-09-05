@@ -783,19 +783,6 @@ h3 {
   isolation: isolate;
 }
 
-.reviews::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  background-image: url("https://media.cwd-cdn.com/The-Curly-Willow/images/intro-background.jpg");
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: cover;
-  opacity: 0.28;
-  pointer-events: none;
-}
-
 .reviews .section-head,
 .reviews .review-grid,
 .reviews .reviews-cta {
