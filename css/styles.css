@@ -1901,7 +1901,7 @@ h3 {
 .contact-page__intro .contact-page__script {
   margin: 0 0 0.45rem;
   font-family: var(--font-script);
-  font-size: clamp(3.5rem, 8vw, 5.5rem);
+  font-size: clamp(2.25rem, 5vw, 3.25rem);
   font-weight: 400;
   color: #88ae41;
   line-height: 1;
