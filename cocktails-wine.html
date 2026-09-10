@@ -1,11 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+      /* Prefer clean URLs when someone lands on the .html form. */
+      (function () {
+        var path = window.location.pathname;
+        if (!/\.html$/i.test(path)) return;
+        var clean = path.replace(/\.html$/i, "");
+        if (/\/index$/i.test(clean)) clean = clean.replace(/\/index$/i, "/") || "/";
+        if (clean === "") clean = "/";
+        window.location.replace(clean + window.location.search + window.location.hash);
+      })();
+    </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cocktails &amp; Wine | The Curly Willow Eatery</title>
   <meta name="description" content="Cocktails, beer, and wine at The Curly Willow Eatery in Collingwood.">
-  <link rel="icon" href="https://media.cwd-cdn.com/The-Curly-Willow/images/favicon.svg" type="image/svg+xml">
+    <link rel="canonical" href="https://thecurlywilloweatery.com/cocktails-wine">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thecurlywilloweatery.com/cocktails-wine">
+  <meta property="og:title" content="Cocktails & Wine | The Curly Willow Eatery">
+  <meta property="og:description" content="Cocktails and wine list at The Curly Willow Eatery in Collingwood.">
+  <meta property="og:image" content="https://media.cwd-cdn.com/The-Curly-Willow/images/explore-cocktails-2.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="https://media.cwd-cdn.com/The-Curly-Willow/images/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -13,7 +32,7 @@
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html">
+    <a class="brand" href="./">
       <img
         class="brand-logo"
         src="https://media.cwd-cdn.com/The-Curly-Willow/images/logo.svg"
@@ -28,13 +47,13 @@
     </button>
 
     <nav class="site-nav" id="site-nav" aria-label="Primary">
-      <a href="index.html">Home</a>
-      <a href="lunch-menu.html">Lunch</a>
-      <a href="dinner-menu.html">Dinner</a>
-      <a href="cocktails-wine.html" aria-current="page">Cocktails &amp; Wine</a>
-      <a href="about-us.html">About Us</a>
-      <a href="about-us.html#events">Events &amp; Catering</a>
-      <a href="contact.html">Contact</a>
+      <a href="./">Home</a>
+      <a href="lunch-menu">Lunch</a>
+      <a href="dinner-menu">Dinner</a>
+      <a href="cocktails-wine" aria-current="page">Cocktails &amp; Wine</a>
+      <a href="about-us">About Us</a>
+      <a href="about-us#events">Events &amp; Catering</a>
+      <a href="contact">Contact</a>
     </nav>
   </header>
 
@@ -331,7 +350,7 @@
     <div class="footer-bar">
       <p>© <span id="year"></span> The Curly Willow Eatery · Website designed by <a href="https://www.collingwoodwebdesign.com/" target="_blank" rel="noopener noreferrer">Collingwood Web Design</a></p>
       <p class="footer-links">
-        <a href="privacy.html">Privacy Policy</a>
+        <a href="privacy">Privacy Policy</a>
       </p>
       <a class="to-top" href="#top" aria-label="Back to top">↑</a>
     </div>
@@ -339,7 +358,7 @@
   <div class="cookie-bar" id="cookie-bar" hidden role="dialog" aria-live="polite" aria-label="Cookie notice">
     <p>
       We use cookies to improve your experience on our site. By using our site you consent to cookies.
-      See our <a href="privacy.html">Privacy Policy</a> for details.
+      See our <a href="privacy">Privacy Policy</a> for details.
     </p>
     <div class="cookie-bar__actions">
       <button class="btn btn-solid" type="button" id="cookie-accept">Accept</button>
