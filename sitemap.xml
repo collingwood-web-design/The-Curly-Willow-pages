@@ -2,30 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://thecurlywilloweatery.com/</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://thecurlywilloweatery.com/lunch-menu</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thecurlywilloweatery.com/dinner-menu</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thecurlywilloweatery.com/cocktails-wine</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thecurlywilloweatery.com/about-us</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thecurlywilloweatery.com/contact</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thecurlywilloweatery.com/privacy</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>
