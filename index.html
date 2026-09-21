@@ -4,6 +4,7 @@
     <script>
       /* Prefer clean URLs when someone lands on the .html form. */
       (function () {
+        if (window.location.protocol === "file:") return;
         var path = window.location.pathname;
         if (!/\.html$/i.test(path)) return;
         var clean = path.replace(/\.html$/i, "");
@@ -62,15 +63,17 @@
     <section class="hero" aria-label="Welcome">
       <div class="hero-panel hero-panel--left">
         <img
-          src="https://media.cwd-cdn.com/The-Curly-Willow/images/hero-left-3.jpg"
+          src="https://media.cwd-cdn.com/The-Curly-Willow/images/hero-left-5.jpg"
           alt="Fresh seasonal dish at The Curly Willow"
           width="1122"
           height="1402"
         >
         <div class="hero-overlay">
-          <p class="hero-line">Fresh Food</p>
-          <p class="hero-line">Good Company</p>
-          <p class="hero-brand">At The Curly Willow</p>
+          <div class="hero-overlay__copy">
+            <p class="hero-line">Fresh Food</p>
+            <p class="hero-line">Good Company</p>
+            <p class="hero-brand">At The Curly Willow</p>
+          </div>
           <div class="hero-actions">
             <a class="btn btn-solid" href="#menus">View Our Menus</a>
             <a class="btn btn-outline" href="tel:7054441562">Reservations</a>
@@ -162,7 +165,7 @@
         </a>
         <a class="menu-tile reveal reveal-delay-2" href="cocktails-wine">
           <span class="menu-tile__media">
-            <img src="https://media.cwd-cdn.com/The-Curly-Willow/images/explore-cocktails-2.jpg" alt="Cocktails and wine at The Curly Willow" width="1536" height="1024">
+            <img src="https://media.cwd-cdn.com/The-Curly-Willow/images/explore-cocktails-3.jpg" alt="Cocktails and wine at The Curly Willow" width="1536" height="1024">
           </span>
           <span class="menu-tile__label">Cocktails &amp; Wine <span aria-hidden="true">›</span></span>
         </a>
@@ -180,6 +183,12 @@
         <div class="experience-carousel__track">
           <img
             class="is-active"
+            src="https://media.cwd-cdn.com/The-Curly-Willow/images/experience-4.jpg"
+            alt="Dining room at The Curly Willow Eatery"
+            width="1536"
+            height="1024"
+          >
+          <img
             src="https://media.cwd-cdn.com/The-Curly-Willow/images/experience.jpg"
             alt="Interior of The Curly Willow Eatery"
             width="1536"
@@ -210,17 +219,43 @@
       </div>
     </section>
 
-    <section class="feature-banner reveal" aria-label="Featured dish">
-      <div class="feature-banner__media">
-        <img
-          src="https://media.cwd-cdn.com/The-Curly-Willow/images/feature-burger.jpg"
-          alt="Signature burger at The Curly Willow"
-          width="1512"
-          height="745"
-        >
+    <section class="feature-banner reveal" aria-label="Featured dishes">
+      <div
+        class="feature-banner__media feature-carousel"
+        data-carousel
+        data-carousel-interval="2400"
+        aria-roledescription="carousel"
+        aria-label="Featured dishes at The Curly Willow"
+      >
+        <div class="feature-carousel__track">
+          <img
+            class="is-active"
+            src="https://media.cwd-cdn.com/The-Curly-Willow/images/feature-burger.jpg"
+            alt="Signature burger at The Curly Willow"
+            width="1512"
+            height="745"
+          >
+          <img
+            src="https://media.cwd-cdn.com/The-Curly-Willow/images/curly-willow-eatery-2.jpg"
+            alt="Surf and turf burger at The Curly Willow"
+            width="1512"
+            height="745"
+          >
+          <img
+            src="https://media.cwd-cdn.com/The-Curly-Willow/images/curly-willow-eatery-4.jpg"
+            alt="Featured dish at The Curly Willow"
+            width="1512"
+            height="745"
+          >
+          <img
+            src="https://media.cwd-cdn.com/The-Curly-Willow/images/curly-willow-eatery-5.jpg"
+            alt="Featured plate at The Curly Willow"
+            width="1512"
+            height="745"
+          >
+        </div>
       </div>
       <div class="feature-banner__content">
-        <p class="feature-banner__kicker">House favourite</p>
         <a class="btn btn-solid" href="#menus">View Our Menus <span aria-hidden="true">›</span></a>
       </div>
     </section>
@@ -391,20 +426,22 @@
       reveals.forEach((el) => el.classList.add('is-visible'));
     }
 
-    // Experience image carousel — gentle fade, ~3.5s between slides
+    // Auto image carousels — gentle fade (no arrows/dots)
     document.querySelectorAll('[data-carousel]').forEach((carousel) => {
-      const slides = carousel.querySelectorAll('.experience-carousel__track img');
+      const slides = carousel.querySelectorAll('img');
       if (slides.length < 2) return;
 
       let index = 0;
       const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       if (reduceMotion) return;
 
+      const intervalMs = Number(carousel.getAttribute('data-carousel-interval')) || 3500;
+
       setInterval(() => {
         slides[index].classList.remove('is-active');
         index = (index + 1) % slides.length;
         slides[index].classList.add('is-active');
-      }, 3500);
+      }, intervalMs);
     });
     (function () {
       const bar = document.getElementById("cookie-bar");

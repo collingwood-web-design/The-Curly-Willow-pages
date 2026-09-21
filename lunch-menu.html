@@ -4,6 +4,7 @@
     <script>
       /* Prefer clean URLs when someone lands on the .html form. */
       (function () {
+        if (window.location.protocol === "file:") return;
         var path = window.location.pathname;
         if (!/\.html$/i.test(path)) return;
         var clean = path.replace(/\.html$/i, "");
@@ -62,12 +63,12 @@
       <picture>
         <source
           media="(max-width: 900px)"
-          srcset="https://media.cwd-cdn.com/The-Curly-Willow/images/curly-willow-lunch-menu-cell-tablet.jpg?v=2"
+          srcset="https://media.cwd-cdn.com/The-Curly-Willow/images/curly-willow-lunch-menu-cell-tablet-2.jpg"
           width="1448"
           height="1086"
         >
         <img
-          src="https://media.cwd-cdn.com/The-Curly-Willow/images/curly-willow-lunch-menu-2.jpg"
+          src="https://media.cwd-cdn.com/The-Curly-Willow/images/curly-willow-lunch-menu-3.jpg"
           alt="Lunch at The Curly Willow Eatery"
           width="2172"
           height="724"

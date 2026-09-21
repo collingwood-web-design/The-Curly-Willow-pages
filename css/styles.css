@@ -307,12 +307,24 @@ h3 {
   justify-content: flex-start;
   align-items: center;
   text-align: center;
-  padding: clamp(1.25rem, 8%, 2.75rem) clamp(1rem, 4%, 2.5rem) 1rem;
+  padding: clamp(1.25rem, 8%, 2.75rem) clamp(1rem, 4%, 2.5rem) clamp(1.25rem, 5%, 2.5rem);
   pointer-events: none;
 }
 
 .hero-overlay .btn {
   pointer-events: auto;
+}
+
+.hero-overlay__copy {
+  max-width: 22rem;
+  margin: 0 auto;
+  padding: 0.85rem 1.1rem 1rem;
+  background: linear-gradient(
+    180deg,
+    rgba(20, 28, 18, 0.55) 0%,
+    rgba(20, 28, 18, 0.42) 100%
+  );
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.28);
 }
 
 .hero-line {
@@ -321,17 +333,19 @@ h3 {
   font-size: clamp(1.85rem, 3.6vw, 3.15rem);
   font-weight: 600;
   line-height: 1.05;
-  color: #3f5a3c;
+  color: #fff;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.55);
 }
 
 .hero-brand {
-  margin: 0.55rem 0 1.15rem;
+  margin: 0.55rem 0 0;
   font-family: var(--font-nav);
   font-size: clamp(0.62rem, 1vw, 0.78rem);
   font-weight: 500;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: #6b6b6b;
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
 }
 
 .hero-actions {
@@ -339,6 +353,8 @@ h3 {
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.65rem;
+  margin-top: auto;
+  padding-top: 1.5rem;
 }
 
 .hero-panel--left .btn-solid {
@@ -741,6 +757,7 @@ h3 {
 }
 
 .feature-banner__media {
+  position: relative;
   width: 100%;
   aspect-ratio: 1512 / 745;
   max-height: min(52vh, 480px);
@@ -748,12 +765,32 @@ h3 {
   background: #ffffff;
 }
 
-.feature-banner__media img {
+.feature-carousel__track {
+  position: absolute;
+  inset: 0;
+}
+
+.feature-carousel__track img {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: contain;
   object-position: center center;
   display: block;
+  opacity: 0;
+  transition: opacity 1.1s ease-in-out;
+}
+
+.feature-carousel__track img.is-active {
+  opacity: 1;
+  z-index: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .feature-carousel__track img {
+    transition: none;
+  }
 }
 
 .feature-banner__content {

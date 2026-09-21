@@ -20,6 +20,7 @@ ROOT = Path(__file__).resolve().parent.parent
 CLIENT_REDIRECT = """    <script>
       /* Prefer clean URLs when someone lands on the .html form. */
       (function () {
+        if (window.location.protocol === "file:") return;
         var path = window.location.pathname;
         if (!/\\.html$/i.test(path)) return;
         var clean = path.replace(/\\.html$/i, "");
